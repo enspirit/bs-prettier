@@ -1,6 +1,6 @@
-# bs-prettier
+# rescript-prettier
 
-[BuckleScript](https://bucklescript.github.io) bindings for [prettier](https://github.com/prettier/prettier).
+[ReScript](https://rescript-lang.org) bindings for [prettier](https://github.com/prettier/prettier).
 
 # Usage
 

@@ -1,18 +1,17 @@
 {
-  "name": "@enspirit/bs-prettier",
+  "name": "@enspirit/rescript-prettier",
   "version": "0.3.0",
   "description": "BuckleScript bindings for Prettier.js",
   "main": "src/Prettier.bs.js",
-  "homepage": "https://github.com/enspirit/bs-prettier#readme",
+  "homepage": "https://github.com/enspirit/rescript-prettier#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enspirit/bs-prettier.git"
+    "url": "git+https://github.com/enspirit/rescript-prettier.git"
   },
   "author": "ygu",
   "license": "ISC",
   "keywords": [
-    "reason",
-    "bucklescript",
+    "rescript",
     "prettier"
   ],
   "scripts": {
@@ -24,7 +23,7 @@
   },
   "devDependencies": {
     "@glennsl/bs-jest": "^0.4.9",
-    "bs-platform": "^5.0.6",
+    "bs-platform": "^8.2.0",
     "jest": "^24.8.0"
   },
   "jest": {

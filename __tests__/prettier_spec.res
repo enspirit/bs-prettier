@@ -1,14 +1,13 @@
-open Jest;
+open Jest
 
-let () =
-  describe(
-    "prettier",
-    ExpectJs.(
-      () => {
+let () = describe(
+  "prettier",
+  {
+    open ExpectJs
+    () => {
+      let core = `Don't touch me. Because I'm already pretty. That's all folks.`
 
-        let core = {|Don't touch me. Because I'm already pretty. That's all folks.|};
-
-        let structured = {|<article>
+      let structured = `<article>
 <h1>Title</h1>
 <p>Some introduction ...</p>
 <section>
@@ -24,9 +23,9 @@ let () =
 <p>Some paragraph ...</p>
 <p>Another paragraph ...</p>
 </section>
-</article>|};
+</article>`
 
-        let formatted = {|<article>
+      let formatted = `<article>
   <h1>Title</h1>
   <p>Some introduction ...</p>
   <section>
@@ -43,17 +42,16 @@ let () =
     <p>Another paragraph ...</p>
   </section>
 </article>
-|};
+`
 
-        test("#format(html)", () =>
-          expect(Prettier.format(core, { "parser": "html" }))
-          |> toBe(core ++ "\n")
-        );
+      test("#format(html)", () =>
+        expect(Prettier.format(core, {"parser": "html"})) |> toBe(core ++ "\n")
+      )
 
-        test("#format(html)", () =>
-          expect(Prettier.format(structured, { "parser": "html" }))
-          |> toBe(formatted)
-        );
-      }
-    ),
-  );
+      test("#format(html)", () =>
+        expect(Prettier.format(structured, {"parser": "html"}))
+        |> toBe(formatted)
+      )
+    }
+  }
+)
