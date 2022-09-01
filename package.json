@@ -1,6 +1,6 @@
 {
   "name": "@enspirit/rescript-prettier",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "ReScript bindings for Prettier.js",
   "main": "src/Prettier.bs.js",
   "homepage": "https://github.com/enspirit/rescript-prettier#readme",
